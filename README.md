@@ -1,5 +1,3 @@
 # startup
 
-"I am altering the README file. Pray I do not alter it again."
-
-"This README is getting worse all the time!" :(
+I learned that if you are only one person working on a project, it might be a little difficult to actually create conflicts as git will warn you about out of date commits. 
