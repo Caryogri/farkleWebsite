@@ -18,3 +18,7 @@ Features
 
 boppagames.click
 18.116.207.14
+
+
+Simon HTML Notes:
+From an HTML standpoint, websites are really just a bunch of HTML files with links in between them. I knew this beforehand, but never really saw it firsthand. The addition of subdomains is an interesting concept. I imagine that this functionality is dependent on the server program that is hosting the actual website, but I am unsure.
