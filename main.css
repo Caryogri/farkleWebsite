@@ -16,17 +16,19 @@ main {
     justify-content: space-around;
 }
 
-div.startPage > select {
+#startPage > select {
     width: 100%
 }
 
-div.startButtons > button.btn-primary {
-    float: left;
+#startButtons > a {
     width: 49%;
+}
+
+#hostGameButton {
+    float: left;
     margin-right: 1%;
 }
 
-div.startButtons > button.btn-secondary {
-    width: 49%;
+#joinGameButton {
     margin-left: 1%;
 }
