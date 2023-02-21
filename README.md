@@ -23,3 +23,7 @@ boppagames.click
 Simon HTML Notes:
 
 From an HTML standpoint, websites are really just a bunch of HTML files with links in between them. I knew this beforehand, but never really saw it firsthand. The addition of subdomains is an interesting concept. I imagine that this functionality is dependent on the server program that is hosting the actual website, but I am unsure.
+
+
+Simon CSS Notes:
+Flex elements, particularly parent divs, can control a lot about the size and position of elements. It can be useful to have similar class naming schemes when you need to apply a CSS declaration to multiple elements of distinct classes. This works becuase the "." before the class name doesn't require an exact match. Also, I test naming classes after colors. This did not appear to cause any issues in selecting them meaning that classes do not appear to have restricted variable names.
