@@ -27,4 +27,4 @@ From an HTML standpoint, websites are really just a bunch of HTML files with lin
 
 Simon CSS Notes:
 
-Flex elements, particularly parent divs, can control a lot about the size and position of elements. It can be useful to have similar class naming schemes when you need to apply a CSS declaration to multiple elements of distinct classes. This works becuase the "." before the class name doesn't require an exact match. Also, I test naming classes after colors. This did not appear to cause any issues in selecting them meaning that classes do not appear to have restricted variable names.
+Flex elements, particularly parent divs, can control a lot about the size and position of elements. It can be useful to have similar class naming schemes when you need to apply a CSS declaration to multiple elements of distinct classes. This works becuase the "." before the class name doesn't require an exact match. Also, I tested naming classes after colors. This did not appear to cause any issues in selecting them meaning that classes do not appear to have restricted variable names.
