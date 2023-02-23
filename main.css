@@ -62,3 +62,44 @@ main {
 .hostButtons {
     margin-top: 15%;
 }
+
+main.rulesetPage {
+    display: inline;
+}
+
+main.rulesetPage > div {
+    margin: auto;
+    width: 50%;
+}
+
+#farkleRuleList {
+    overflow-y: scroll;
+    height: 67%;
+}
+
+
+.rulelist {
+    text-align: center;
+}
+
+.rulelist > table {
+    width: 100%;
+}
+
+tr > .checkbox {
+    text-align: center;
+}
+
+.addRuleDiv {
+    text-align: center;
+}
+
+.ruleCancelButton {
+    float: left;
+    margin-left: 25%;
+}
+
+.ruleSaveButton {
+    float: right;
+    margin-right: 25%;
+}
