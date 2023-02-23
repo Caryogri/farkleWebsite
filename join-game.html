@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Farkle Ruleset</title>
+
+        <link rel="stylesheet" href="main.css" />
+
+        <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    </head>
+
+    <body>
+        <main class="container-fluid tablePage">
+            <div class="joinPopup boxDiv">
+                <form method="get" action="farkle.html">
+                    <div class="form-group">
+                        <label for="roomPassword">Password</label>
+                        <input type="password" class="form-control" id="passwordEnter" placeholder="Enter password">
+                    </div>
+                    <div class="text-center passwordJoinButtons">
+                        <button type="button" class="btn btn-danger cancelJoinButton">Cancel</button>
+                        <input class="btn btn-success joinButton" type="submit" value="Join">
+                    </div>
+            </div>
+            <div class="roomlist">
+                <table class="table table-striped-columns">
+                    <thead>
+                        <tr>
+                            <th>Room Name</th>
+                            <th>Password Required?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                           <td>Placeholder</td>
+                           <td>Yes</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                           <td>Placeholder2</td>
+                           <td>No</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-center joinButtons">
+                <a href="index.html" role="button" class="btn btn-danger cancelJoinButton leftButton">Cancel</a>
+                <a href="farkle.html" role="button" class="btn btn-success joinButton rightButton">Join</a>
+            </div>
+        </main>
+    </body>
+</html>
