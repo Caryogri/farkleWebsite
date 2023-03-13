@@ -33,3 +33,8 @@ Flex elements, particularly parent divs, can control a lot about the size and po
 Startup HTML and CSS Notes:
 
 I've learned that many elements that are traditionally used to store only text can be used to store other things as well. I also learned how to expand selectors to cover multiple groups of elements with one rule.
+
+
+Simon Javascript Notes:
+
+Debugging JS while trying to deploy a website is extremely difficult. How to attach files to website and load them.
