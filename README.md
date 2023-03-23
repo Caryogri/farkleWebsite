@@ -40,4 +40,5 @@ Simon Javascript Notes:
 Debugging JS while trying to deploy a website is extremely difficult. How to attach files to website and load them.
 
 Simon Service Notes:
+
 At least in terms of setting up a service to send and recieve info from the server, using express to do so and set up the requisite APIs is actually fairly easy. If my understanding is correct, this could likely be done without a service, but using a service likely improves security and overall interactivity. Simon only needs a Service for score tracking, everything else is run through the user's browser.
