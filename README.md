@@ -42,3 +42,8 @@ Debugging JS while trying to deploy a website is extremely difficult. How to att
 Simon Service Notes:
 
 At least in terms of setting up a service to send and recieve info from the server, using express to do so and set up the requisite APIs is actually fairly easy. If my understanding is correct, this could likely be done without a service, but using a service likely improves security and overall interactivity. Simon only needs a Service for score tracking, everything else is run through the user's browser.
+
+
+Simon DB Notes:
+
+That took way more time than necessary. I learned that I need to/how to restart the service to update the environment variables. I also learned that, unless there is a different way of using environment variables on windows, I can't rely on them for testing in my dev environment. Other than that, pretty standard stuff. The express integration makes more sense now. Still not sure why you would need a database if the server has local storage. P.S. I also was able to confirm that the LocalStorage variable refers to the host's storage, not the client.
