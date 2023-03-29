@@ -51,3 +51,7 @@ That took way more time than necessary. I learned that I need to/how to restart 
 Simon Login Notes:
 
 Learned how to make authtokens and apply them to cookies. The authtoken is created on user generation and is stored in the database, along with username and an encrypted password. User logins take the entered password, encrypt it, and compare it to the string in the database. When the user successfully logs in, their authtoken is stored on their system in the form of a cookie. This cookie is referenced every time the user makes an authenticated request. The cookie has tags which let the browser know its behavior. When the user logs out, the cookie is cleared. All this is mediated with the express handlers. Also, code 204 indicates that a request has succeeded but the browser doesn't need to update.
+
+Simon WebSocket Notes:
+
+Learned how to create Web Sockets using wss in a separate class. Connections can be monitored using an array comprised of UUIDs (Universal Unique Identifier). The main part of the web code initailizes the websocket class and sends messages to it directly.
