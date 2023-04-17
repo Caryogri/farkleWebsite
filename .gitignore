@@ -9,3 +9,4 @@ src/Host/hostFarkleGame.js
 src/Start/join-game.html
 src/Start/joinFarkleGame.js
 public/notepad.png
+src/main.css
