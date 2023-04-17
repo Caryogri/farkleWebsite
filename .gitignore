@@ -1,3 +1,11 @@
 images/notepad.png
 deployFiles.sh
 node_modules
+src/customize-farkle-rules.html
+src/Game/farkle_old.html
+src/Game/farkle_old.js
+src/Host/host-farkle-game.html
+src/Host/hostFarkleGame.js
+src/Start/join-game.html
+src/Start/joinFarkleGame.js
+public/notepad.png
