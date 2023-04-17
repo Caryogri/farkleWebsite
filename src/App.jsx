@@ -10,13 +10,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
 
 function App() {
-  const [userName, setUserName] = React.useState(localStorage.getItem('userName') || '');
+  const [username, setUserName] = React.useState(localStorage.getItem('username') || '');
 
   // Asynchronously determine if the user is authenticated by calling the service
   const [authState, setAuthState] = React.useState(AuthState.Unknown);
   React.useEffect(() => {
-    if (userName) {
-      fetch(`/api/user/${userName}`)
+    if (username) {
+      fetch(`/api/user/${username}`)
         .then((response) => {
           if (response.status === 200) {
             return response.json();
@@ -29,7 +29,7 @@ function App() {
     } else {
       setAuthState(AuthState.Unauthenticated);
     }
-  }, [userName]);
+  }, [username]);
 
   return (
  
@@ -41,18 +41,18 @@ function App() {
           path='/'
           element={
             <Login
-              userName={userName}
+              username={username}
               authState={authState}
-              onAuthChange={(userName, authState) => {
+              onAuthChange={(username, authState) => {
                 setAuthState(authState);
-                setUserName(userName);
+                setUserName(username);
               }}
             />
           }
           exact
         />
-        <Route path='/start' element={<Start userName={userName} />} />
-        <Route path='/host' element={<Host userName={userName} />} />
+        <Route path='/start' element={<Start username={username} />} />
+        <Route path='/host' element={<Host username={username} />} />
         <Route path='/farkle' element={<Farkle  />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
