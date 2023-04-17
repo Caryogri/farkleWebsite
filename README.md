@@ -55,3 +55,8 @@ Learned how to make authtokens and apply them to cookies. The authtoken is creat
 Simon WebSocket Notes:
 
 Learned how to create Web Sockets using wss in a separate class. Connections can be monitored using an array comprised of UUIDs (Universal Unique Identifier). The main part of the web code initailizes the websocket class and sends messages to it directly.
+
+
+Simon React Notes:
+
+Learned how to import existing code into a React app. Honestly the whole process is fairly tedious and in the future, apps should be crafted with React or another framework in mind from the getgo.
