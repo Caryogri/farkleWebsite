@@ -218,37 +218,13 @@ tr > .checkbox {
     float: right;
 }
 
-.top {
+div.top {
     margin-top: 0.2em;
     margin-bottom: 0.5em;
 }
 
-.bottom {
+div.bottom {
     margin-top: 0.5em;
-}
-
-.one .left,.one .right {
-    visibility: hidden;
-}
-
-.two .top .right, .two .bottom .left, .two .middle {
-    visibility: hidden;
-}
-
-.three .bottom .right, .three .top .left, .three .middle .left, .three .middle .right {
-    visibility: hidden;
-}
-
-.four .middle .dot {
-    visibility: hidden;
-}
-
-.five .middle .left, .five .middle .right {
-    visibility: hidden;
-}
-
-.six .center {
-    visibility: hidden;
 }
 
 
