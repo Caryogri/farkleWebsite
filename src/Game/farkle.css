@@ -1,0 +1,92 @@
+.farklePage {
+    flex-direction: row;
+    justify-content: left;
+    align-items: start;
+}
+
+.farkleSideBar {
+    height: 100%;
+    width: 30%;
+    text-align: center;
+}
+
+.farkleScoreboard {
+    height: 90%;
+    overflow: auto;
+}
+
+.farkleSideBar > .btn {
+    margin-top: 5%;
+    width: 50%;
+}
+
+.farkleMain {
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.farkleMain > .buttonHolder {
+    height: 10%
+}
+
+.farkleMain > .buttonHolder > .btn {
+    margin-top: 2%;
+}
+
+#farkleEndTurnButton {
+    float: right;
+}
+
+.tabletop {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.farkleDice {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 10em 10em 10em;
+    grid-template-rows: 10em 10em;
+    padding-left: 0%;
+    margin-left: 0%;
+}
+
+.die {
+    height: 90%;
+    width: 90%;
+    background: white;
+}
+
+.die > div {
+    width: 100%;
+    display: inline-block;
+}
+
+.dot {
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block;
+}
+
+.dot.left  {
+    float: left;
+}
+
+.dot.right {
+    float: right;
+}
+
+div.top {
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+}
+
+div.bottom {
+    margin-top: 0.5em;
+}
