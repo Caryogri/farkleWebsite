@@ -1,0 +1,12 @@
+{
+  "name": "startup",
+  "version": "1.0.0",
+  "description": "Grandparents like to play games, but they don't like to do anything on a computer more complex than web browsing. This project hopes to solve these two issues: a website where they can play games with family. Simply have a more technologically savvy family member set up a room and have them join. Multiple players in different geographic locations will able to play the same game with only a web browser. While only one game will be available initially, the website will be designed so that more games can be added over time.",
+  "main": "farkle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
