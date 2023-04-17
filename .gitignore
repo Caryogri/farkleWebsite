@@ -12,3 +12,4 @@ public/notepad.png
 src/main.css
 build/
 deployReact.sh
+.env.local
