@@ -11,3 +11,4 @@ src/Start/joinFarkleGame.js
 public/notepad.png
 src/main.css
 build/
+deployReact.sh
