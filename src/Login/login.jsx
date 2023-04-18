@@ -5,6 +5,15 @@ import { Authenticated } from './authenticated';
 import { AuthState } from './authState';
 
 export function Login({ username, authState, onAuthChange }) {
+  const [quote, setQuote] = React.useState('Nothing yet');
+  React.useEffect(() => {
+    fetch('https://api.quotable.io/random')
+    .then((response) => response.json())
+    .then((data) => {
+      setQuote(data.content);
+    })
+    .catch();
+}, []);
   return (
     <main className='container-fluid text-center'>
       <div>
@@ -20,6 +29,10 @@ export function Login({ username, authState, onAuthChange }) {
             }}
           />
         )}
+      </div>
+
+      <div>
+        <p>{quote}</p>
       </div>
     </main>
   );
