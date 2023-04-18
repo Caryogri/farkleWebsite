@@ -44,7 +44,8 @@ function getRoom(roomName) {
 }
 
 function getAllRooms() {
-  return roomCollection.find();
+  const rooms = roomCollection.find({},{});
+  return rooms.toArray();
 }
 
 async function createRoom(roomName, password, numPlayers, currentPlayers) {
@@ -69,5 +70,6 @@ module.exports = {
   getUserByToken,
   createUser,
   getRoom,
-  getAllRooms
+  getAllRooms,
+  createRoom
 };

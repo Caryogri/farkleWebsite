@@ -52,8 +52,6 @@ apiRouter.post('/auth/login', async (req, res) => {
   res.status(401).send({ msg: 'Unauthorized' });
 });
 
-apiRouter
-
 // DeleteAuth token if stored in cookie
 apiRouter.delete('/auth/logout', (_req, res) => {
   res.clearCookie(authCookieName);
@@ -71,8 +69,9 @@ apiRouter.get('/user/:username', async (req, res) => {
   res.status(404).send({ msg: 'Unknown' });
 });
 
-apiRouter.get('/rooms', async (req, res) => {
+apiRouter.get('/room/all', async (_req, res) => {
   const rooms = DB.getAllRooms();
+  console.log(rooms);
   if (rooms) {
     res.send({roomlist: rooms});
     return;
@@ -80,7 +79,30 @@ apiRouter.get('/rooms', async (req, res) => {
   res.status(404).send({ msg: 'Unknown' });
 });
 
+apiRouter.get('/room/get', async(req, res) => {
+  const room = await DB.getRoom(req.body.roomName);
+  if (room) {
+    res.send({
+      roomID: room.roomID,
+    });
+    return;
+  }
+  res.status(404).send({ msg: 'Unknown' });
+});
 
+apiRouter.post('/room/host', async (req, res) => {
+  console.log("host2");
+  if (await DB.getRoom(req.body.roomName)) {
+    res.status(409).send({ msg: 'Room with name already exists' });
+  } else {
+    const room = await DB.createRoom(req.body.roomName, req.body.password, req.body.numPlayers, req.body.currentPlayers);
+
+    res.send({
+      roomID: room.roomID,
+    });
+    return;
+  }
+});
 
 
 // secureApiRouter verifies credentials for endpoints
@@ -94,20 +116,6 @@ secureApiRouter.use(async (req, res, next) => {
     next();
   } else {
     res.status(401).send({ msg: 'Unauthorized' });
-  }
-});
-
-
-
-apiRouter.post('/host', async (req, res) => {
-  if (await DB.getRoom(req.body.roomName)) {
-    res.status(409).send({ msg: 'Room with name already exists' });
-  } else {
-    const room = await DB.createRoom(req.body.roomName, req.body.password, req.body.numPlayers, req.body.currentPlayers);
-
-    res.send({
-      roomID: room.roomID,
-    });
   }
 });
 
