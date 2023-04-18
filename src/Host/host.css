@@ -1,0 +1,25 @@
+.boxDiv {
+    background: white;
+    padding: 1%;
+    border-style: solid;
+}
+
+.hostPage > h2 {
+    text-align: center;
+}
+
+.form-group {
+    padding-bottom: 5px;
+}
+
+#hostCancelButton {
+    float: left
+}
+
+#hostStartButton {
+    float: right;
+}
+
+.hostButtons {
+    margin-top: 15%;
+}

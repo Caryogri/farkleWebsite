@@ -1,0 +1,27 @@
+.roomlist {
+    height: 90%;
+    overflow-y: auto;
+    background: white;
+}
+
+.tablePage {
+    align-items: start;
+  }
+  
+  .tablePage > div {
+    margin: auto;
+    width: 50%;
+  }
+  
+  #startCancelButton {
+    float: left;
+  }
+  
+  #startJoinButton {
+    float: right;
+  }
+
+  #startHostButton {
+    float: center;
+  }
+
