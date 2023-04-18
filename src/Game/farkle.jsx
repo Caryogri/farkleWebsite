@@ -148,12 +148,16 @@ function dieSelected(dieNum) {
 }
 
 async function rollDie() {
-
+    
 }
 
 function rollDice() {
-    selectedDice.forEach(die => {
-        
+    var dieNum = 0;
+    selectedDice.forEach((die) => {
+        if(die) {
+            rollDie(dieNum);
+            dieNum++;
+        }
     });
 }
 
