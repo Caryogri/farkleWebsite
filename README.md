@@ -60,3 +60,15 @@ Learned how to create Web Sockets using wss in a separate class. Connections can
 Simon React Notes:
 
 Learned how to import existing code into a React app. Honestly the whole process is fairly tedious and in the future, apps should be crafted with React or another framework in mind from the getgo.
+
+Startup Javascript Notes:
+
+Async functions can be fairly finicky, but are useful. Learned how to debug JS code from a browser. 
+
+Startup Service Notes:
+
+Had some trouble with the mongodb api. It didn't work in my development envirnment and behaved strangly for certain function calls. This taught me to focus intently on making sure the development environment works and can be properly used for debugging. Without these services working, entire functions of your website can be crippled. Unfortunately, this is true for me as well.
+
+Startup React Notes:
+
+React can be extremely useful for easy manipulation of the DOM and keeping track of specific components. As HTML and JS is injected, redundant code can be minimized and the pages themselves can be made more dynamic. React apps should really be built from the ground up and not migrated into. 
