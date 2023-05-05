@@ -1,5 +1,9 @@
 # Grandpa Games - Designed for C S 260
 
+Contains code for a website created for a web programming class. Due to time constraints, it is not fully functional as of yet.
+
+***
+
 Grandparents like to play games, but they don't like to do anything on a computer more complex than web browsing. This project hopes to solve these two issues: a website where they can play games with family. Simply have a more technologically savvy family member set up a room and have them join. Multiple players in different geographic locations will able to play the same game with only a web browser. While only one game will be available initially, the website will be designed so that more games can be added over time.
 
 ![Start Page](https://user-images.githubusercontent.com/35751007/215210299-f8a44c61-6d55-4dfb-bb90-b0ac26fe0f87.PNG)
